@@ -1,0 +1,20 @@
+.header_btn{
+    color:$White;
+    padding:15px;
+    width:10rem;
+    background-color:$Blue;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top:2rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $Cyan;
+
+    }
+}

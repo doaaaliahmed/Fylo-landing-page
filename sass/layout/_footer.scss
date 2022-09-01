@@ -1,0 +1,110 @@
+.footer{
+    background-color:$Dark-Blue-footer;
+    padding:80px 40px;
+    min-height:70vh;
+    display:grid;
+    align-items: center;
+    color:$White;
+    font-size:14px;
+    column-gap: 3rem;
+
+    .footer_logo{
+        width:100px;
+    }
+
+    &-row{
+       
+        @media (min-width:990px){
+            display: flex;
+            align-items: flex-start;
+            justify-content:space-between;
+        }
+            img{
+                width:15px;
+            }
+        
+        .col{
+            margin:40px 0;
+
+            @media (min-width:990px){
+                margin:0;
+            }
+        }
+
+        .col-1{
+            max-width:300px;
+            width:80%;
+            margin:40px 0;
+
+
+            @media (min-width:990px){
+                margin:0;
+
+                .col-3{
+                    margin-left:30px;
+                    margin-right:0;
+                }
+
+            }
+
+        }
+
+        .col-1 , .tel ,.mail{
+            display: flex;
+            justify-content:flex-start;
+            align-items: flex-start;
+            gap:10px;
+            margin-bottom:10px;
+        }
+    }
+
+    &-list-container{
+        list-style: none;
+        
+        .footer-list:not(:first-child){
+            margin:20px 0;
+    }
+    .footer-link{
+        color:$White;
+        text-decoration: none;
+        transition:all .2s;
+        -webkit-transition:all ;
+        -moz-transition:all ;
+        -ms-transition:all ;
+        -o-transition:all ;
+
+        &:hover{
+            font-weight:700;
+        }
+    }
+    }
+
+    &-media-container{
+        list-style: none;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        gap:20px;
+
+        .footer-list{
+            width:40px;
+            height:40px;
+            border:1px solid $White;
+            border-radius: 50%;
+            -webkit-border-radius: 50p;
+            -moz-border-radius: 50p;
+            -ms-border-radius: 50p;
+            -o-border-radius: 50p;
+            padding:10px 0;
+            text-align:center;
+
+            &:hover{
+                border-color: $Cyan;
+
+                svg{
+                    fill:$Cyan;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+main{
+    background-color:$Dark-Blue-main;
+    color:$White;
+
+    .section-one{
+        width:100%;
+        height:fit-content;
+        display: grid;
+        place-items: center;
+
+        @media (min-width:990px) {
+                grid-template-columns: repeat(2,450px);
+                justify-content: center;
+                align-items: flex-end;
+                gap:20px;  
+        }
+    }
+
+
+    .section-two{
+        padding:80px 20px;
+        min-height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        gap:5rem;
+
+        @media (min-width:990px){
+           grid-template-columns: 1fr 1fr;
+           gap:0px;
+        }
+
+        .img-illustration{
+            width:100%;
+        }
+
+        &_info{
+            width:80%;
+
+            &__title{
+                font-family: 'Raleway', sans-serif;
+            }
+
+            &__par{
+                margin:20px 0;
+            }
+        }
+
+        .works-link{
+            text-decoration: none;
+            color: $Blue;
+            font-size: 1rem;
+            padding-bottom: 5px;
+            border-bottom: 1px solid  $Blue;
+
+            &:hover{
+                color:$White;
+                border-bottom-color: $White;
+            }
+        }
+    }
+
+    .section-three{
+        min-height: 70vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+        @media (min-width:990px){
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:0px;
+         }
+
+
+        .card--1{
+            position: relative;
+           
+
+
+            .quote-icon{
+                position:absolute;
+                left:0;
+                top:-18%;
+               
+            }
+        }
+ 
+
+        .review-card{
+        background-color: $Dark-Blue-testimonials;
+        width:90%;
+        max-width:350px;
+        margin:20px 0;
+        border-radius: 5px;
+        padding:20px;
+      
+
+        .card_info {
+        
+            display: flex;
+            align-items:center;
+            justify-content: flex-start;
+            gap:10px;
+            margin-top:40px;
+            font-size:14px;
+            font-weight:400;
+        
+            img{
+            width:50px;
+            height:50px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+
+    }
+      
+        }
+
+    }
+}

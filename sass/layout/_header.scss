@@ -1,0 +1,51 @@
+.header{
+    background-color:$Dark-Blue-intro;
+    color:$White;
+    position :relative;
+    min-height:70vh;
+    display: grid;
+    place-items:center;
+    padding:20px 0;
+
+    &::before{
+        content:'';
+        background-image:url(/images/bg-curvy-mobile.svg);
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover;
+        height:70vh;
+        width:100%;
+        position:absolute;
+        bottom:0%;
+        z-index: 1;
+
+
+        @media (min-width:768px) {
+            background-image:url(/images/bg-curvy-desktop.svg);
+            
+        }
+    }
+
+    &_img{
+        width:60%;
+        max-width:40rem;
+        z-index:2;
+            img{
+                width:100%;
+                z-index:2;
+            }
+    }
+
+    &_title{
+        max-width:35rem;
+        width: 80%;
+        text-align: center;
+        margin: 50px auto;
+        z-index:5;
+    }
+    &_heading{
+        font-family: 'Raleway', sans-serif;
+        margin:20px auto;
+    }
+ }
+
