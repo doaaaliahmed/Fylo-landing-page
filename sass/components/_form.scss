@@ -7,7 +7,7 @@
     left:50%;
     z-index:5;
     width:90%;
-    max-width:445px;
+    max-width:450px;
     min-height:60vh;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -38,12 +38,31 @@
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
         margin:20px auto;
+
     }
+    
 
     input[type=submit]{
         background-color: $Cyan;
         color:$White;
         font-weight: 700;
+        cursor: pointer;
     }
 
-}
+    .emailcontainer{
+        position: relative;
+        margin-bottom:30px;
+        }
+    }
+
+    #error-msg{
+        position: absolute;
+        bottom: -16px;
+        left: 13%;
+        color:$Light-Red;
+        font-size:12px;
+        margin-top:0;
+        display: none;
+    }
+
+
